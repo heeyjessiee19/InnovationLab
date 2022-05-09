@@ -1,0 +1,890 @@
+/*Importaciones*/
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&family=Shadows+Into+Light+Two&display=swap');
+
+/*----------MOBILE FIRST----------*/
+@media (min-width:320px) {
+
+    /*Fondo de Pantalla*/
+    .fondoA {
+        top: 0px;
+        bottom: 0px;
+        position: fixed;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('https://s1.significados.com/foto/tecnologia-dura-fa.jpg');
+        background-size: cover;
+        z-index: 0;
+        
+    }
+
+    /*Top container*/
+    .top-containerA {
+        margin-top: 10%;
+        text-align: center;
+        font-family: 'Hubballi', cursive;
+        font-size: 20px;
+        position: relative;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .nav-link:hover {
+        color: aqua;
+    }
+
+
+    /*Galería de Fotos*/
+    .middle-container {
+        margin-top: 45px;
+        margin-left: 35px;
+        margin-bottom: 50px;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 250px;
+        height: 250px;
+        perspective: 1000px;
+        margin-bottom: 50px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-card-back {
+        background-color: transparent;
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    .description {
+        font-family: 'Shadows Into Light Two', cursive;
+        text-align: center;
+        display: block;
+    }
+
+    /*tamaño de la imagen*/
+    .gal {
+        width: 250px;
+        height: 250px;
+    }
+
+    h1 {
+        margin-top: 30px;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*Links redes sociales*/
+    .bottom-container {
+        padding: 15px 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .social {
+        color: white;
+        padding: 5px;
+        position: relative;
+    }
+
+    .social:hover {
+        color: aqua;
+    }
+
+    .bi {
+        width: 30px;
+        height: 30px;
+    }
+
+    .last {
+        font-family: 'Hubballi', cursive;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+}
+
+@media (min-width:375px) {
+    /*Fondo de Pantalla*/
+    .fondoA {
+        top: 0px;
+        bottom: 0px;
+        position: fixed;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('https://s1.significados.com/foto/tecnologia-dura-fa.jpg');
+        background-size: cover;
+        z-index: 0;
+        filter: blur(6px);
+    }
+
+    /*Top container*/
+    .top-containerA {
+        margin-top: 10%;
+        text-align: center;
+        font-family: 'Hubballi', cursive;
+        font-size: 25px;
+        position: relative;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .nav-link:hover {
+        color: aqua;
+    }
+
+
+    /*Galería de Fotos*/
+    .middle-container {
+        margin-top: 55px;
+        margin-left: 40px;
+        margin-bottom: 55px;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        margin-bottom: 25px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-card-back {
+        background-color: transparent;
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    .description {
+        font-family: 'Shadows Into Light Two', cursive;
+        text-align: center;
+        display: block;
+        
+    }
+
+    /*tamaño de la imagen*/
+    .gal {
+        width: 300px;
+        height: 300px;
+    }
+
+    h1 {
+        margin-top: 30px;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*Links redes sociales*/
+    .bottom-container {
+        padding: 15px 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .social {
+        color: white;
+        padding: 5px;
+        position: relative;
+    }
+
+    .social:hover {
+        color: aqua;
+    }
+
+    .bi {
+        width: 30px;
+        height: 30px;
+    }
+
+    .last {
+        font-family: 'Hubballi', cursive;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+}
+
+@media (min-width:425px) {
+    /*Fondo de Pantalla*/
+    .fondoA {
+        top: 0px;
+        bottom: 0px;
+        position: fixed;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('https://s1.significados.com/foto/tecnologia-dura-fa.jpg');
+        background-size: cover;
+        z-index: 0;
+        filter: blur(6px);
+    }
+
+    /*Top container*/
+    .top-containerA {
+        margin-top: 10%;
+        text-align: center;
+        font-family: 'Hubballi', cursive;
+        font-size: 25px;
+        position: relative;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .nav-link:hover {
+        color: aqua;
+    }
+
+
+    /*Galería de Fotos*/
+    .middle-container {
+        margin-top: 55px;
+        margin-left: 65px;
+        margin-bottom: 55px;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        margin-bottom: 25px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-card-back {
+        background-color: transparent;
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    .description {
+        font-family: 'Shadows Into Light Two', cursive;
+        text-align: center;
+        display: block;
+        
+    }
+
+    /*tamaño de la imagen*/
+    .gal {
+        width: 300px;
+        height: 300px;
+    }
+
+    h1 {
+        margin-top: 30px;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*Links redes sociales*/
+    .bottom-container {
+        padding: 15px 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .social {
+        color: white;
+        padding: 5px;
+        position: relative;
+    }
+
+    .social:hover {
+        color: aqua;
+    }
+
+    .bi {
+        width: 30px;
+        height: 30px;
+    }
+
+    .last {
+        font-family: 'Hubballi', cursive;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+}
+
+@media (min-width:768px) {
+    /*Fondo de Pantalla*/
+    .fondoA {
+        top: 0px;
+        bottom: 0px;
+        position: fixed;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('https://s1.significados.com/foto/tecnologia-dura-fa.jpg');
+        background-size: cover;
+        z-index: 0;
+        filter: blur(6px);
+    }
+
+    /*Top container*/
+    .top-containerA {
+        margin-top: 5%;
+        text-align: center;
+        font-family: 'Hubballi', cursive;
+        font-size: 25px;
+        position: relative;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .nav-link:hover {
+        color: aqua;
+    }
+
+
+    /*Galería de Fotos*/
+    .middle-container {
+        margin-top: 55px;
+        margin-left: 200px;
+        margin-bottom: 55px;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 400px;
+        height: 400px;
+        perspective: 1000px;
+        margin-bottom: 25px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-card-back {
+        background-color: transparent;
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    .description {
+        font-family: 'Shadows Into Light Two', cursive;
+        text-align: center;
+        display: block;
+        
+    }
+
+    /*tamaño de la imagen*/
+    .gal {
+        width: 400px;
+        height: 400px;
+    }
+
+    h1 {
+        margin-top: 30px;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*Links redes sociales*/
+    .bottom-container {
+        padding: 15px 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .social {
+        color: white;
+        padding: 5px;
+        position: relative;
+    }
+
+    .social:hover {
+        color: aqua;
+    }
+
+    .bi {
+        width: 30px;
+        height: 30px;
+    }
+
+    .last {
+        font-family: 'Hubballi', cursive;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+}
+
+@media (min-width:1024px) {
+    /*Fondo de Pantalla*/
+    .fondoA {
+        top: 0px;
+        bottom: 0px;
+        position: fixed;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('https://s1.significados.com/foto/tecnologia-dura-fa.jpg');
+        background-size: cover;
+        z-index: 0;
+        filter: blur(6px);
+    }
+
+    /*Top container*/
+    .top-containerA {
+        margin-top: 5%;
+        text-align: center;
+        font-family: 'Hubballi', cursive;
+        font-size: 50px;
+        position: relative;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .nav-link:hover {
+        color: aqua;
+    }
+
+
+    /*Galería de Fotos*/
+    .middle-container {
+        margin-top: 60px;
+        margin-left: 250px;
+        margin-bottom: 55px;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 450px;
+        height: 450px;
+        perspective: 1000px;
+        margin-bottom: 30px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-card-back {
+        background-color: transparent;
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    .description {
+        font-family: 'Shadows Into Light Two', cursive;
+        text-align: center;
+        display: block;
+        
+    }
+
+    /*tamaño de la imagen*/
+    .gal {
+        width: 450px;
+        height: 450px;
+    }
+
+    h1 {
+        margin-top: 40px;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*Links redes sociales*/
+    .bottom-container {
+        padding: 15px 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .social {
+        color: white;
+        padding: 5px;
+        position: relative;
+    }
+
+    .social:hover {
+        color: aqua;
+    }
+
+    .bi {
+        width: 45px;
+        height: 45px;
+    }
+
+    .last {
+        font-family: 'Hubballi', cursive;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+}
+
+@media (min-width:1440px) {
+
+    /*Fondo de Pantalla*/
+    .fondoA {
+        top: 0px;
+        bottom: 0px;
+        position: fixed;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('https://s1.significados.com/foto/tecnologia-dura-fa.jpg');
+        background-size: cover;
+        z-index: 0;
+        filter: blur(6px);
+    }
+
+    /*Top container*/
+    .top-containerA {
+        margin-top: 5%;
+        text-align: center;
+        font-family: 'Hubballi', cursive;
+        font-size: 50px;
+        position: relative;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .nav-link:hover {
+        color: aqua;
+    }
+
+
+    /*Galería de Fotos*/
+    .middle-container {
+        margin-top: 60px;
+        margin-left: 250px;
+        margin-bottom: 55px;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 450px;
+        height: 450px;
+        perspective: 1000px;
+        margin-bottom: 30px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-card-back {
+        background-color: transparent;
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    .description {
+        font-family: 'Shadows Into Light Two', cursive;
+        text-align: center;
+        display: block;
+        
+    }
+
+    /*tamaño de la imagen*/
+    .gal {
+        width: 450px;
+        height: 450px;
+    }
+
+    h1 {
+        margin-top: 40px;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*Links redes sociales*/
+    .bottom-container {
+        padding: 15px 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .social {
+        color: white;
+        padding: 5px;
+        position: relative;
+    }
+
+    .social:hover {
+        color: aqua;
+    }
+
+    .bi {
+        width: 45px;
+        height: 45px;
+    }
+
+    .last {
+        font-family: 'Hubballi', cursive;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+}
+
+/*<div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                            <img src={yopi} alt="Avatar" className='gal'/>
+                        </div>
+                        <div className="flip-card-back">
+                            <h1>Adrián Catalán</h1>
+                            <p>Team's Leader</p>
+                            <p className='description'>Innovation Lab leader and Google Developer Expert.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                            <img src={prueba1} alt="Avatar" className='gal'/>
+                        </div>
+                        <div className="flip-card-back">
+                            <h1>Luis Jimenez</h1>
+                            <p>Projects Leader</p>
+                            <p className='description'>Interested in computer vision, hardware and education.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                            <img src={prueba2} alt="Avatar" className='gal'/>
+                        </div>
+                        <div className="flip-card-back">
+                            <h1>Holly Milián</h1>
+                            <p>Graphic Designer</p>
+                            <p className='description'>Illustrator and Amateur Photographer</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                            <img src={yopi} alt="Avatar" className='gal'/>
+                        </div>
+                        <div className="flip-card-back">
+                            <h1>Kevin Hernández</h1>
+                            <p>Projecs Assistant</p>
+                            <p className='description'>Interested in Artificial Intelligence and Mobile Development.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                            <img src={prueba1} alt="Avatar" className='gal'/>
+                        </div>
+                        <div className="flip-card-back">
+                            <h1>Jessica Hernández</h1>
+                            <p>Web Developer</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                            <img src={prueba2} alt="Avatar" className='gal'/>
+                        </div>
+                        <div className="flip-card-back">
+                            <h1>Holly Milián</h1>
+                            <p>Graphic Designer</p>
+                            <p>We love that girl</p>
+                        </div>
+                    </div>
+                </div>*/

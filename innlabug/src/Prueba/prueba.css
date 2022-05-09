@@ -1,0 +1,1083 @@
+/*Importaciones*/
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Ramabhadra&display=swap');
+
+/*Mobile First*/
+
+/*Containers*/
+.container-fluid {
+    padding: 7% 15%;
+}
+
+/*Section Top Container*/
+
+#top {
+    background-image: url('https://s1.significados.com/foto/tecnologia-dura-fa.jpg');
+    background-size: cover;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+#top .container-fluid {
+    padding: 10% 6% 15%;
+}
+
+.welcome {
+    font-family: 'Itim', cursive;
+    color: white;
+    padding: 5%;
+    animation: fadeInDown;
+    animation-duration: 2s;
+    font-size: 35px;
+    text-align: center;
+}
+
+.logo {
+    margin-top: 25px;
+    margin-bottom: 55px;
+    height: 72px;
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+
+.options {
+    color: #1D9AF2;
+    background-color: #292D3E;
+    border: 1px solid #1D9AF2;
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    height: 32px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    margin-left: 15px;
+}
+
+.options:hover {
+    transform: scale(1.1);
+}
+
+/*Section About Us*/
+
+#about {
+    position: relative;
+}
+
+.middleContainer {
+    background-color: #DDF3F5;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-family: 'Hubballi', cursive;
+    font-weight: bold;
+    text-align: center;
+}
+
+.feature-box {
+    padding: 4.5%;
+}
+
+.icon {
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    color: #ff4c68;
+}
+
+p {
+    text-align: center;
+}
+
+/*Section Staff*/
+
+#staff {
+    position: relative;
+}
+
+.staff {
+    background-color: #13DCB5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2311A3D0' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%230CF218'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 230px;
+    height: 230px;
+    perspective: 1000px;
+    margin-bottom: 40px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.description {
+    font-family: 'Shadows Into Light Two', cursive;
+    text-align: center;
+    display: block;
+}
+
+/*tamaño de la imagen*/
+.gal {
+    width: 230px;
+    height: 230px;
+}
+
+h1 {
+    margin-top: 30px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*Section Social Media*/
+
+#socials {
+    position: relative;
+}
+
+.bottomContainer {
+    background-image: url('https://s1.significados.com/foto/tecnologia-dura-fa.jpg');
+    background-size: cover;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.bottom {
+    padding: 15px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social {
+    color: white;
+    padding: 5px;
+    position: relative;
+}
+
+.social:hover {
+    color: aqua;
+}
+
+.bi {
+    width: 25px;
+    height: 25px;
+}
+
+.last {
+    font-family: 'Hubballi', cursive;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+@media (min-width:375px) {
+
+    /*Containers*/
+    .container-fluid {
+        padding: 7% 15%;
+    }
+
+    /*Section Top Container*/
+
+    #top {
+        background-image: url('https://s1.significados.com/foto/tecnologia-dura-fa.jpg');
+        background-size: cover;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    #top .container-fluid {
+        padding: 10% 6% 15%;
+    }
+
+    .welcome {
+        font-family: 'Itim', cursive;
+        color: white;
+        padding: 5%;
+        animation: fadeInDown;
+        animation-duration: 2s;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .logo {
+        margin-top: 25px;
+        margin-bottom: 55px;
+        height: 78px;
+        animation: fadeInDown;
+        animation-duration: 2s;
+    }
+
+    .options {
+        color: #1D9AF2;
+        background-color: #292D3E;
+        border: 1px solid #1D9AF2;
+        border-radius: 4px;
+        padding: 0 15px;
+        cursor: pointer;
+        height: 32px;
+        font-size: 14px;
+        transition: all 0.2s ease-in-out;
+        margin-left: 15px;
+    }
+
+    .options:hover {
+        transform: scale(1.1);
+    }
+
+    /*Section About Us*/
+
+    #about {
+        position: relative;
+    }
+
+    .middleContainer {
+        background-color: #DDF3F5;
+    }
+
+    .feature-title {
+        font-size: 1.5rem;
+        font-family: 'Hubballi', cursive;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .feature-box {
+        padding: 4.5%;
+    }
+
+    .icon {
+        color: #ef8172;
+        margin-bottom: 1rem;
+    }
+
+    .icon:hover {
+        color: #ff4c68;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    /*Section Staff*/
+
+    #staff {
+        position: relative;
+    }
+
+    .staff {
+        background-color: #13DCB5;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2311A3D0' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%230CF218'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+        background-size: cover;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 270px;
+        height: 270px;
+        perspective: 1000px;
+        margin-bottom: 45px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-card-back {
+        background-color: white;
+        color: black;
+        transform: rotateY(180deg);
+    }
+
+    .description {
+        font-family: 'Shadows Into Light Two', cursive;
+        text-align: center;
+        display: block;
+    }
+
+    /*tamaño de la imagen*/
+    .gal {
+        width: 270px;
+        height: 270px;
+    }
+
+    h1 {
+        margin-top: 30px;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*Section Social Media*/
+
+    #socials {
+        position: relative;
+    }
+
+    .bottomContainer {
+        background-image: url('https://s1.significados.com/foto/tecnologia-dura-fa.jpg');
+        background-size: cover;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    .bottom {
+        padding: 15px 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .social {
+        color: white;
+        padding: 5px;
+        position: relative;
+    }
+
+    .social:hover {
+        color: aqua;
+    }
+
+    .bi {
+        width: 30px;
+        height: 30px;
+    }
+
+    .last {
+        font-family: 'Hubballi', cursive;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+}
+
+@media (min-width:425px) {
+    
+    /*Containers*/
+    .container-fluid {
+        padding: 7% 15%;
+    }
+
+    /*Section Top Container*/
+
+    #top {
+        background-image: url('https://s1.significados.com/foto/tecnologia-dura-fa.jpg');
+        background-size: cover;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    #top .container-fluid {
+        padding: 10% 6% 15%;
+    }
+
+    .welcome {
+        font-family: 'Itim', cursive;
+        color: white;
+        padding: 3%;
+        animation: fadeInDown;
+        animation-duration: 2s;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .logo {
+        margin-top: 25px;
+        margin-bottom: 55px;
+        height: 85px;
+        animation: fadeInDown;
+        animation-duration: 2s;
+    }
+
+    .options {
+        color: #1D9AF2;
+        background-color: #292D3E;
+        border: 1px solid #1D9AF2;
+        border-radius: 4px;
+        padding: 0 15px;
+        cursor: pointer;
+        height: 32px;
+        font-size: 14px;
+        transition: all 0.2s ease-in-out;
+        margin-left: 15px;
+    }
+
+    .options:hover {
+        transform: scale(1.1);
+    }
+
+    /*Section About Us*/
+
+    #about {
+        position: relative;
+    }
+
+    .middleContainer {
+        background-color: #DDF3F5;
+    }
+
+    .feature-title {
+        font-size: 1.5rem;
+        font-family: 'Hubballi', cursive;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .feature-box {
+        padding: 4.5%;
+    }
+
+    .icon {
+        color: #ef8172;
+        margin-bottom: 1rem;
+    }
+
+    .icon:hover {
+        color: #ff4c68;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    /*Section Staff*/
+
+    #staff {
+        position: relative;
+    }
+
+    .staff {
+        background-color: #13DCB5;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2311A3D0' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%230CF218'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+        background-size: cover;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        margin-bottom: 45px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-card-back {
+        background-color: white;
+        color: black;
+        transform: rotateY(180deg);
+    }
+
+    .description {
+        font-family: 'Shadows Into Light Two', cursive;
+        text-align: center;
+        display: block;
+    }
+
+    /*tamaño de la imagen*/
+    .gal {
+        width: 300px;
+        height: 300px;
+    }
+
+    h1 {
+        margin-top: 30px;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*Section Social Media*/
+
+    #socials {
+        position: relative;
+    }
+
+    .bottomContainer {
+        background-image: url('https://s1.significados.com/foto/tecnologia-dura-fa.jpg');
+        background-size: cover;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    .bottom {
+        padding: 15px 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .social {
+        color: white;
+        padding: 5px;
+        position: relative;
+    }
+
+    .social:hover {
+        color: aqua;
+    }
+
+    .bi {
+        width: 35px;
+        height: 35px;
+    }
+
+    .last {
+        font-family: 'Hubballi', cursive;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+}
+
+@media (min-width:768px) {
+
+    /*Containers*/
+    .container-fluid {
+        padding: 10% 15%;
+    }
+
+    /*Section Top Container*/
+
+    #top {
+        background-image: url('https://s1.significados.com/foto/tecnologia-dura-fa.jpg');
+        background-size: cover;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    #top .container-fluid {
+        padding: 5% 6% 15%;
+    }
+
+    .welcome {
+        font-family: 'Itim', cursive;
+        color: white;
+        padding: 3%;
+        animation: fadeInDown;
+        animation-duration: 2s;
+        font-size: 55px;
+        text-align: center;
+    }
+
+    .logo {
+        margin-top: 25px;
+        margin-bottom: 55px;
+        height: 150px;
+        animation: fadeInDown;
+        animation-duration: 2s;
+    }
+
+    .options {
+        color: #1D9AF2;
+        background-color: #292D3E;
+        border: 1px solid #1D9AF2;
+        border-radius: 4px;
+        padding: 0 15px;
+        cursor: pointer;
+        height: 50px;
+        font-size: 14px;
+        transition: all 0.2s ease-in-out;
+        margin-left: 15px;
+    }
+
+    .options:hover {
+        transform: scale(1.1);
+    }
+
+    /*Section About Us*/
+
+    #about {
+        position: relative;
+    }
+
+    .middleContainer {
+        background-color: #DDF3F5;
+    }
+
+    .feature-title {
+        font-size: 2.8rem;
+        font-family: 'Hubballi', cursive;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .feature-box {
+        padding: 4.5%;
+    }
+
+    .icon {
+        color: #ef8172;
+        margin-bottom: 1rem;
+    }
+
+    .icon:hover {
+        color: #ff4c68;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    /*Section Staff*/
+
+    #staff {
+        position: relative;
+    }
+
+    .staff {
+        background-color: #13DCB5;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2311A3D0' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%230CF218'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+        background-size: cover;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 350px;
+        height: 350px;
+        perspective: 1000px;
+        margin-bottom: 45px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-card-back {
+        background-color: white;
+        color: black;
+        transform: rotateY(180deg);
+    }
+
+    .description {
+        font-family: 'Shadows Into Light Two', cursive;
+        text-align: center;
+        display: block;
+    }
+
+    /*tamaño de la imagen*/
+    .gal {
+        width: 350px;
+        height: 350px;
+    }
+
+    h1 {
+        margin-top: 30px;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*Section Social Media*/
+
+    #socials {
+        position: relative;
+    }
+
+    .bottomContainer {
+        background-image: url('https://s1.significados.com/foto/tecnologia-dura-fa.jpg');
+        background-size: cover;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    .bottom {
+        padding: 15px 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .social {
+        color: white;
+        padding: 5px;
+        position: relative;
+    }
+
+    .social:hover {
+        color: aqua;
+    }
+
+    .bi {
+        width: 35px;
+        height: 35px;
+    }
+
+    .last {
+        font-family: 'Hubballi', cursive;
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+}
+
+@media (min-width:1024px) {
+    /*Containers*/
+    .container-fluid {
+        padding: 10% 15%;
+    }
+
+    /*Section Top Container*/
+
+    #top {
+        background-image: url('https://s1.significados.com/foto/tecnologia-dura-fa.jpg');
+        background-size: cover;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    #top .container-fluid {
+        padding: 5% 6% 15%;
+    }
+
+    .welcome {
+        font-family: 'Itim', cursive;
+        color: white;
+        padding: 3%;
+        animation: fadeInDown;
+        animation-duration: 2s;
+        font-size: 55px;
+        text-align: center;
+    }
+
+    .logo {
+        margin-top: 25px;
+        margin-bottom: 60px;
+        height: 200px;
+        animation: fadeInDown;
+        animation-duration: 2s;
+    }
+
+    .options {
+        color: #1D9AF2;
+        background-color: #292D3E;
+        border: 1px solid #1D9AF2;
+        border-radius: 4px;
+        padding: 0 15px;
+        cursor: pointer;
+        height: 50px;
+        font-size: 14px;
+        transition: all 0.2s ease-in-out;
+        margin-left: 15px;
+    }
+
+    .options:hover {
+        transform: scale(1.1);
+    }
+
+    /*Section About Us*/
+
+    #about {
+        position: relative;
+    }
+
+    .middleContainer {
+        background-color: #DDF3F5;
+    }
+
+    .feature-title {
+        font-size: 2.8rem;
+        font-family: 'Hubballi', cursive;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .feature-box {
+        padding: 5.5%;
+    }
+
+    .icon {
+        color: #ef8172;
+        margin-bottom: 1rem;
+    }
+
+    .icon:hover {
+        color: #ff4c68;
+    }
+
+    p {
+        text-align: center;
+        /*font-size: 0.6rem;
+        font-size: 10px;
+        font-size: 0.5rem;
+        /*padding: 5px 1px 1px 0px;*/
+        font-size: 10px;
+        padding-left: 5px;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    /*Section Staff*/
+
+    #staff {
+        position: relative;
+    }
+
+    .staff {
+        background-color: #13DCB5;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2311A3D0' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%230CF218'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+        background-size: cover;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 180px;
+        height: 180px;
+        perspective: 1000px;
+        margin-bottom: 55px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-card-back {
+        background-color: white;
+        color: black;
+        transform: rotateY(180deg);
+    }
+
+    .description {
+        font-family: 'Shadows Into Light Two', cursive;
+        text-align: center;
+        display: block;
+        font-size: 15px;
+    }
+
+    /*tamaño de la imagen*/
+    .gal {
+        width: 180px;
+        height: 180px;
+    }
+
+    h1 {
+        margin-top: 30px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 25px;
+    }
+
+    /*Section Social Media*/
+
+    #socials {
+        position: relative;
+    }
+
+    .bottomContainer {
+        background-image: url('https://s1.significados.com/foto/tecnologia-dura-fa.jpg');
+        background-size: cover;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    .bottom {
+        padding: 15px 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .social {
+        color: white;
+        padding: 5px;
+        position: relative;
+    }
+
+    .social:hover {
+        color: aqua;
+    }
+
+    .bi {
+        width: 35px;
+        height: 35px;
+    }
+
+    .last {
+        font-family: 'Hubballi', cursive;
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+}
