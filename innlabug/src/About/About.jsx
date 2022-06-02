@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
 import './about.css'
-import yopi from '../assets/marvelita.jpg'
 
 const About = () => {
     return (
@@ -22,66 +21,7 @@ const About = () => {
                 </ul>
             </div>
 
-            <div className='middle-container'>
-                <div className='row'>
-                    <div className='col-sm'>
-                        <div className="flip-card">
-                            <div className="flip-card-inner">
-                                <div className="flip-card-front">
-                                    <img src={yopi} alt="Avatar" className='gal' />
-                                </div>
-                                <div className="flip-card-back">
-                                    <h1>Adrián Catalán</h1>
-                                    <p>Team's Leader</p>
-                                    <p className='description'>Innovation Lab leader and Google Developer Expert.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='col-sm'>
-                    <div className="flip-card">
-                            <div className="flip-card-inner">
-                                <div className="flip-card-front">
-                                    <img src={yopi} alt="Avatar" className='gal' />
-                                </div>
-                                <div className="flip-card-back">
-                                    <h1>Adrián Catalán</h1>
-                                    <p>Team's Leader</p>
-                                    <p className='description'>Innovation Lab leader and Google Developer Expert.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='col-sm'>
-                    <div className="flip-card">
-                            <div className="flip-card-inner">
-                                <div className="flip-card-front">
-                                    <img src={yopi} alt="Avatar" className='gal' />
-                                </div>
-                                <div className="flip-card-back">
-                                    <h1>Adrián Catalán</h1>
-                                    <p>Team's Leader</p>
-                                    <p className='description'>Innovation Lab leader and Google Developer Expert.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='col-sm'>
-                    <div className="flip-card">
-                            <div className="flip-card-inner">
-                                <div className="flip-card-front">
-                                    <img src={yopi} alt="Avatar" className='gal' />
-                                </div>
-                                <div className="flip-card-back">
-                                    <h1>Adrián Catalán</h1>
-                                    <p>Team's Leader</p>
-                                    <p className='description'>Innovation Lab leader and Google Developer Expert.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
 
             <div className='bottom-container'>
                 <a className='social' href='https://www.instagram.com/innovationlabug/'>

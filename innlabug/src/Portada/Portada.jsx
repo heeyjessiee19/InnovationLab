@@ -3,7 +3,14 @@ import React, { Fragment } from 'react'
 import './portada.css'
 /*logo de la portada*/
 import logo from '../assets/logocolor.PNG'
-import yopi from '../assets/marvelita.jpg'
+import adr from '../assets/Adrian.png'
+import cath from '../assets/Catherine.png'
+import emi from '../assets/Emily.png'
+import hol from '../assets/Holly.png'
+import jess from '../assets/Jessica.png'
+import kev from '../assets/Kevin.png'
+import luis from '../assets/Luis.png'
+import osc from '../assets/Oscar.png'
 
 const Portada = () => {
     return (
@@ -78,14 +85,14 @@ const Portada = () => {
                     </div>
                 </div>
             </section>
-            <section className='staff' id='staff'>
+            <section className='staffs' id='staff'>
                 <div className='container-fluid'>
                     <div className='row'>
                         <div className='col-lg-3 col-md-6'>
                             <div className="flip-card">
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front">
-                                        <img src={yopi} alt="Avatar" className='gal' />
+                                        <img src={adr} alt="Avatar" className='gal' />
                                     </div>
                                     <div className="flip-card-back">
                                         <h1>Adrián Catalán</h1>
@@ -100,10 +107,10 @@ const Portada = () => {
                             <div className="flip-card">
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front">
-                                        <img src={yopi} alt="Avatar" className='gal' />
+                                        <img src={jess} alt="Avatar" className='gal' />
                                     </div>
                                     <div className="flip-card-back">
-                                        <h1>Adrián Catalán</h1>
+                                        <h1>Jessica Hernández</h1>
                                         <p>Team's Leader</p>
                                         <p className='description'>Innovation Lab leader and Google Developer Expert.</p>
                                     </div>
@@ -115,10 +122,10 @@ const Portada = () => {
                             <div className="flip-card">
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front">
-                                        <img src={yopi} alt="Avatar" className='gal' />
+                                        <img src={luis} alt="Avatar" className='gal' />
                                     </div>
                                     <div className="flip-card-back">
-                                        <h1>Adrián Catalán</h1>
+                                        <h1>Luis Cú</h1>
                                         <p>Team's Leader</p>
                                         <p className='description'>Innovation Lab leader and Google Developer Expert.</p>
                                     </div>
@@ -130,10 +137,10 @@ const Portada = () => {
                             <div className="flip-card">
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front">
-                                        <img src={yopi} alt="Avatar" className='gal' />
+                                        <img src={hol} alt="Avatar" className='gal' />
                                     </div>
                                     <div className="flip-card-back">
-                                        <h1>Adrián Catalán</h1>
+                                        <h1>Holly Milián</h1>
                                         <p>Team's Leader</p>
                                         <p className='description'>Innovation Lab leader and Google Developer Expert.</p>
                                     </div>
@@ -145,10 +152,10 @@ const Portada = () => {
                             <div className="flip-card">
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front">
-                                        <img src={yopi} alt="Avatar" className='gal' />
+                                        <img src={cath} alt="Avatar" className='gal' />
                                     </div>
                                     <div className="flip-card-back">
-                                        <h1>Adrián Catalán</h1>
+                                        <h1>Catherine Batrés</h1>
                                         <p>Team's Leader</p>
                                         <p className='description'>Innovation Lab leader and Google Developer Expert.</p>
                                     </div>
@@ -160,10 +167,10 @@ const Portada = () => {
                             <div className="flip-card">
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front">
-                                        <img src={yopi} alt="Avatar" className='gal' />
+                                        <img src={kev} alt="Avatar" className='gal' />
                                     </div>
                                     <div className="flip-card-back">
-                                        <h1>Adrián Catalán</h1>
+                                        <h1>Kevin Hernández</h1>
                                         <p>Team's Leader</p>
                                         <p className='description'>Innovation Lab leader and Google Developer Expert.</p>
                                     </div>
@@ -175,10 +182,10 @@ const Portada = () => {
                             <div className="flip-card">
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front">
-                                        <img src={yopi} alt="Avatar" className='gal' />
+                                        <img src={emi} alt="Avatar" className='gal' />
                                     </div>
                                     <div className="flip-card-back">
-                                        <h1>Adrián Catalán</h1>
+                                        <h1>Emily Curín</h1>
                                         <p>Team's Leader</p>
                                         <p className='description'>Innovation Lab leader and Google Developer Expert.</p>
                                     </div>
@@ -190,10 +197,10 @@ const Portada = () => {
                             <div className="flip-card">
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front">
-                                        <img src={yopi} alt="Avatar" className='gal' />
+                                        <img src={osc} alt="Avatar" className='gal' />
                                     </div>
                                     <div className="flip-card-back">
-                                        <h1>Adrián Catalán</h1>
+                                        <h1>Oscar Valle</h1>
                                         <p>Team's Leader</p>
                                         <p className='description'>Innovation Lab leader and Google Developer Expert.</p>
                                     </div>

@@ -30,7 +30,7 @@ body {
 
 #top .top-cloud {
     position: absolute;
-    right: 300px;
+    right: 400px;
     top: 20px;
     height: 80px;
     width: 80px;
@@ -38,21 +38,20 @@ body {
 
 #top .bottom-cloud {
     position: absolute;
-    left: 300px;
-    bottom: 10px;
+    left: 400px;
+    bottom: 50px;
     height: 80px;
     width: 80px;
 }
 
 #top .planet {
-    /*height="200px" width="300px"*/
     height: 200px;
     width: 300px;
 }
 
 #top .toph1 {
     font-size: 5.625rem;
-    margin: 50px auto 0 auto;
+    margin: 80px auto 0 auto;
     font-family: 'Sacramento', cursive;
     color: #66BFBF;
 }
@@ -69,10 +68,10 @@ body {
 
 #middle .perfil {
     border-radius: 50%;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 5px;
-    width: 50%;
-    margin-bottom: 10px;
+    width: 45%;
+    margin-bottom: 20px;
 }
 
 #middle .skill-row {
@@ -116,6 +115,8 @@ body {
     float: left;
     margin-right: 30px;
 }
+
+/*Parte de la introducción*/
 
 #middle .intro {
     width: 80%;
@@ -275,35 +276,35 @@ hr {
 
     #top .top-cloud {
         position: absolute;
-        right: 200px;
-        top: 20px;
+        right: 100px;
+        top: 30px;
         height: 180px;
         width: 180px;
     }
 
     #top .bottom-cloud {
         position: absolute;
-        left: 200px;
-        bottom: 20px;
+        left: 100px;
+        bottom: 30px;
         height: 180px;
         width: 180px;
     }
 
     #top .planet {
-        height: 200px;
-        width: 300px;
+        height: 250px;
+        width: 350px;
     }
 
     #top .toph1 {
-        font-size: 5.625rem;
-        margin: 50px auto 0 auto;
+        font-size: 5.725rem;
+        margin: 250px auto 0 auto;
         font-family: 'Sacramento', cursive;
         color: #66BFBF;
     }
 
     #top .topP {
         line-height: 2;
-        font-size: 20px;
+        font-size: 25px;
     }
 
     /*Middle Container*/
@@ -313,10 +314,12 @@ hr {
 
     #middle .perfil {
         border-radius: 50%;
-        margin-top: 50px;
+        margin-top: 30px;
         padding: 5px;
-        width: 25%;
-        margin-bottom: 10px;
+        /*width: 50%;*/
+        height: 300px;
+        width: 300px;
+        margin-bottom: 30px;
     }
 
     #middle .skill-row {
@@ -490,8 +493,6 @@ hr {
         font-size: 0.75rem;
         padding: 20px 0;
     }
-
-
 
 
 }

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Sacramento&display=swap');
+
+/*Mobile first**/
+.prueba {
+    /*background: linear-gradient(90deg, rgba(104,103,172,1) 0%, rgba(162,103,172,1) 100%);*/
+    background-image: url('../../assets/estrellas1.jpg');
+    height: 100vh;
+    width: 100vw;
+}
+
+.izq {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+}
+
+.izquierda {
+    width: 100px;
+    height: 100px;
+}
+
+.centro {
+    position: relative;
+    top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.center {
+    animation: slideInUp;
+    animation-duration: 2s;
+}
+
+.der {
+    position: absolute;
+    bottom: 5%;
+    right: 25%;
+}
+
+.derecha {
+    width: 100px;
+    height: 100px;
+}
+
+.middle {
+    /*background: linear-gradient(90deg, rgba(206,123,176,1) 0%, rgba(162,103,172,1) 100%);*/
+    background-image: url('../../assets/estrellas1.jpg');
+    height: 100vh;
+    width: 100vw;
+    padding: 25px;
+}
+
+.titulo {
+    text-align: center;
+    font-family: 'Hubballi', cursive;
+    padding: 5%;
+    font-weight: bold;
+    color: azure;
+}
+
+.over {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+}
+
+
+
+/*.containers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}*/
+
+/*.item {
+    padding: 2em;
+    margin: 1em;
+}*/
+
+.planetas {
+    width: 110px;
+    height: 110px;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 110px;
+    width: 110px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.over:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

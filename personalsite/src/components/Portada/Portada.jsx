@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import './portada.css'
 import nube from '../../assets/rocket.png'
 import planet from '../../assets/saturn.png'
-import me from '../../assets/yop.jpg'
+import me from '../../assets/jessie.jpg'
 import react from '../../assets/physics.png'
 import css from '../../assets/css.png'
 import js from '../../assets/js.png'
@@ -28,7 +28,7 @@ const Portada = () => {
                         <img className="perfil" src={me} alt="Jessie's profile pic" />
                         <h2>Hello</h2>
                         <p className="intro">I'm 4th year Systems Engineering student <br />
-                            Laboratory Assistant at <a className="lab" href="https://innovacion.galileo.edu/">Innovation Laboratory Galileo University</a>
+                            Research Assistant at <a className="lab" href="https://innovacion.galileo.edu/">Innovation Laboratory Galileo University</a>
                         </p>
                     </div>
                     <hr />
