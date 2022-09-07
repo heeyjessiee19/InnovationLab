@@ -1,23 +1,13 @@
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-import Portada from './Portada/Portada';
-import About from './About/About';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Principal from "./components/Principal/Principal";
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path='/about'>
-          <About />
-        </Route>
-        <Route path="/" exact>
-          <Portada />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Principal />} />
+      </Routes>
     </Router>
   );
 }

@@ -1,86 +1,84 @@
-import React, { Fragment } from 'react'
-import './cover.css'
-import planet from '../../assets/planet.png'
-import cohete from '../../assets/start-up.png'
-import planeta from '../../assets/uranus.png'
-import mercury from '../../assets/images/planet-mercury.svg'
-import venus from '../../assets/images/planet-venus.svg'
-import earth from '../../assets/images/planet-earth.svg'
-import mars from '../../assets/images/planet-mars.svg'
-import jupiter from '../../assets/images/planet-jupiter.svg'
-import saturn from '../../assets/images/planet-saturn.svg'
-import uranus from '../../assets/images/planet-uranus.svg'
-import neptune from '../../assets/images/planet-neptune.svg'
-import 'animate.css';
+import React, { Fragment } from "react";
+import "./cover.css";
+import together from "../../assets/together.png";
+import mercury from "../../assets/images/planet-mercury.svg";
+import venus from "../../assets/images/planet-venus.svg";
+import earth from "../../assets/images/planet-earth.svg";
+import mars from "../../assets/images/planet-mars.svg";
+import jupiter from "../../assets/images/planet-jupiter.svg";
+import saturn from "../../assets/images/planet-saturn.svg";
+import uranus from "../../assets/images/planet-uranus.svg";
+import neptune from "../../assets/images/planet-neptune.svg";
+import "animate.css";
 
 const Cover = () => {
-    return (
-        <Fragment>
-            <div className='prueba'>
-                <div className='izq'>
-                    <img src={planet} alt='planeta esquina superior izquierda' className='izquierda' />
-                </div>
-                <div className='centro'>
-                    <img src={cohete} alt='cohete del centro' className='center' />
-                </div>
-                <div className='der'>
-                    <img src={planeta} alt='planeta esquina inferior derecha' className='derecha' />
-                </div>
-            </div>
-            <div className='middle'>
-                <h1 className='titulo'>The Planets</h1>
-                <div className='over'>
-                    <img src={mercury} alt='Mercurio' className='planetas' />
-                    <div className='overlay'>
-                        <div className='text'>Mercury</div>
-                    </div>
-                </div>
-                <div className='over'>
-                    <img src={mercury} alt='Mercurio' className='planetas' />
-                    <div className='overlay'>
-                        <div className='text'>Mercury</div>
-                    </div>
-                </div>
-            </div>
-        </Fragment>
-    )
-}
+  return (
+    <Fragment>
+      <section className="topSectionCover" id="topSection">
+        <div className="row">
+          <img src={together} alt="Animación" className="together" />
+          <h1 className="welcome">Welcome to Space</h1>
+        </div>
+      </section>
+      <section className="bottomSectionCover " id="bottomSec">
+        <h1 className="mid">Discover Solar System</h1>
+        <figure>
+          <a href="/mercury">
+            <img src={mercury} alt="Mercury" className="mercury" />
+          </a>
+          <figcaption className="caption">Mercury</figcaption>
+        </figure>
+        <figure>
+          <a href="/venus">
+            <img src={venus} alt="Venus" className="venus" />
+          </a>
+          <figcaption className="caption">Venus</figcaption>
+        </figure>
 
-export default Cover
+        <figure>
+          <a href="/earth">
+            <img src={earth} alt="Earth" className="earth" />
+          </a>
+          <figcaption className="caption">Earth</figcaption>
+        </figure>
 
-/*<div className='middle'>
-                <h1 className='titulo'>The Planets</h1>
-                <div className='containers'>
-                    <img src={mercury} alt='Mercurio' className='planetas' />
-                    <div className='overlay'>
-                        <div className='text'>Mercury</div>
-                    </div>
-                </div>
-            </div>*/
-/* <div className='item'>
-                        <img src={mercury} alt='Mercurio' className='planetas' />
-                        <div className='overlay'>
-                            <h1 className='text'>Mercury</h1>
-                        </div>
-                   </div>
-                   <div className='item'>
-                        <img src={venus} alt='Venus' className='planetas' />
-                   </div>
-                   <div className='item'>
-                        <img src={earth} alt='marte' className='planetas' />
-                   </div>
-                   <div className='item'>
-                        <img src={mars} alt='marte' className='planetas' />
-                   </div>
-                   <div className='item'>
-                        <img src={jupiter} alt='marte' className='planetas' />
-                   </div>
-                   <div className='item'>
-                        <img src={saturn} alt='marte' className='planetas' />
-                   </div>
-                   <div className='item'>
-                        <img src={uranus} alt='marte' className='planetas' />
-                   </div>
-                   <div className='item'>
-                        <img src={neptune} alt='marte' className='planetas' />
-                   </div>*/
+        <figure>
+          <a href="/mars">
+            <img src={mars} alt="Mars" className="mars" />
+          </a>
+          <figcaption className="caption">Mars</figcaption>
+        </figure>
+
+        <figure>
+          <a href="/jupiter">
+            <img src={jupiter} alt="Jupiter" className="jupiter" />
+          </a>
+          <figcaption className="caption">Jupiter</figcaption>
+        </figure>
+
+        <figure>
+          <a href="/saturn">
+            <img src={saturn} alt="Saturn" className="saturn" />
+          </a>
+          <figcaption className="caption">Saturn</figcaption>
+        </figure>
+
+        <figure>
+          <a href="/uranus">
+            <img src={uranus} alt="Uranus" className="uranus" />
+          </a>
+          <figcaption className="caption">Uranus</figcaption>
+        </figure>
+
+        <figure>
+          <a href="/neptune">
+            <img src={neptune} alt="Neptune" className="neptune" />
+          </a>
+          <figcaption className="caption">Neptune</figcaption>
+        </figure>
+      </section>
+    </Fragment>
+  );
+};
+
+export default Cover;
